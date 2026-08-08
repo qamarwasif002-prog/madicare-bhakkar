@@ -1,0 +1,6 @@
+{
+  "name": "MediCare Bhakkar",
+  "description": "Professional doctor appointment website for MediCare Bhakkar clinic on Darya Khan Road, Bhakkar, Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #f0f5f5;
+    --surface: #ffffff;
+    --primary: #0d9488;
+    --secondary: #1e293b;
+    --text-main: #334155;
+    --text-light: #64748b;
+    --border: #e2e8f0;
+    --accent: #f0fdfa;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    background-color: var(--bg);
+  }
+}
+
+/* Bento Grid Surface Utilities */
+.bento-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  transition: all 0.25s ease-in-out;
+}
+
+.bento-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(13, 148, 136, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+  border-color: rgba(13, 148, 136, 0.3);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
